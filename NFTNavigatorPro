@@ -1,0 +1,26 @@
+# NFTNavigatorPro.py
+
+class NFTNavigatorPro:
+    def __init__(self, platform_name, navigation_features):
+        self.platform_name = platform_name
+        self.navigation_features = navigation_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Navigation Features:")
+        for feature in self.navigation_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "NFTNavigatorPro"
+    navigation_features = [
+        "Browse trending NFT collections",
+        "Explore NFT marketplaces",
+        "Track upcoming NFT drops",
+        "Discover popular NFT artists",
+        "Monitor NFT sales and auctions"
+    ]
+    
+    nft_navigator = NFTNavigatorPro(platform_name, navigation_features)
+    nft_navigator.display_platform_info()
